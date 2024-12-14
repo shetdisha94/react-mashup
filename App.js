@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 const parent = React.createElement(
   "div",
   { className: "parent" },
@@ -13,8 +16,19 @@ const heading = React.createElement(
   "Welcome Disha to React !!"
 );
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-const root1 = ReactDOM.createRoot(document.getElementById("root1"));
+// const jsxHeading = (
+//   <div id="jsxId">
+//     <h1 id="jsxHeading">Welcome to React with JSX</h1>
+//   </div>
+// );
 
-root.render(heading);
-root1.render(parent);
+//React Element
+const jsxHeading = <h1 id="jsxHeading">Welcome to React with JSX</h1>;
+const root2 = ReactDOM.createRoot(document.getElementById("root2"));
+
+//const root = ReactDOM.createRoot(document.getElementById("root"));
+//const root1 = ReactDOM.createRoot(document.getElementById("root1"));
+
+//root.render(heading);
+//root1.render(parent);
+root2.render(jsxHeading);

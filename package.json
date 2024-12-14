@@ -1,0 +1,32 @@
+{
+  "name": "react-mashup",
+  "version": "1.0.0",
+  "description": "this is a react learning project",
+  "scripts": {
+    "start": "npx run index.html",
+    "build": "npx run build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shetdisha94/react-mashup.git"
+  },
+  "keywords": [],
+  "author": "Disha Shet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shetdisha94/react-mashup/issues"
+  },
+  "homepage": "https://github.com/shetdisha94/react-mashup#readme",
+  "devDependencies": {
+    "parcel": "^2.13.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
