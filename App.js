@@ -1,34 +1,29 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const parent = React.createElement(
-  "div",
-  { className: "parent" },
-  React.createElement("div", { className: "child" }, [
-    React.createElement("h1", {}, "I am in h1 tag"),
-    React.createElement("h2", {}, "I am in h2 Tag"),
-  ])
+const TitleComponent = () => (
+  <div id="title">
+    <p>
+      React Title Component<span> {year}</span>
+    </p>
+  </div>
 );
 
-const heading = React.createElement(
-  "h1",
-  { id: "heading" },
-  "Welcome Disha to React !!"
-);
+const titleElement = <h1>React title element</h1>;
+const year = 2024;
 
-// const jsxHeading = (
-//   <div id="jsxId">
-//     <h1 id="jsxHeading">Welcome to React with JSX</h1>
-//   </div>
-// );
+const Heading = () => {
+  return (
+    <div id="heading">
+      <h1 id="heading">Welcome to React Component</h1>
+      {titleElement}
+      {TitleComponent()}
+      <TitleComponent />
+      <TitleComponent></TitleComponent>
+    </div>
+  );
+};
 
-//React Element
-const jsxHeading = <h1 id="jsxHeading">Welcome to React with JSX</h1>;
-const root2 = ReactDOM.createRoot(document.getElementById("root2"));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-//const root = ReactDOM.createRoot(document.getElementById("root"));
-//const root1 = ReactDOM.createRoot(document.getElementById("root1"));
-
-//root.render(heading);
-//root1.render(parent);
-root2.render(jsxHeading);
+root.render(<Heading />);
